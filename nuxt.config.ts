@@ -5,6 +5,7 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     '@pinia/nuxt',
     '@nuxtjs/google-fonts',
+    'nuxt-icon',
   ],
   googleFonts: {
     families: {

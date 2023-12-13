@@ -15,6 +15,7 @@ onMounted(() => {
     <p class="username">
       {{ username }}
     </p>
+    <Icon icon-btn name="nuxt" />
     <div btn>
       {{ time }}
     </div>
