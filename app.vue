@@ -1,8 +1,6 @@
 <script lang="ts" setup>
 const username = ref('')
 
-console.log(username.value)
-
 const time = useTimeAgo(useNow())
 
 onMounted(() => {
