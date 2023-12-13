@@ -3,10 +3,17 @@ export default defineNuxtConfig({
   modules: [
     '@vueuse/nuxt',
     '@unocss/nuxt',
-    '@pinia/nuxt'
+    '@pinia/nuxt',
+    '@nuxtjs/google-fonts',
   ],
-  typescript: {
-    typeCheck: true
+  googleFonts: {
+    families: {
+      'Roboto': true,
+      'Open Sans': true,
+    },
   },
-  devtools: { enabled: true }
+  typescript: {
+    typeCheck: true,
+  },
+  devtools: { enabled: true },
 })
