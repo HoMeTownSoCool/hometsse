@@ -3,7 +3,7 @@ const username = ref('')
 
 console.log(username.value)
 
-const time = useTimeAgo(new Date())
+const time = useTimeAgo(useNow())
 
 onMounted(() => {
   setTimeout(() => {
@@ -12,8 +12,15 @@ onMounted(() => {
 })
 </script>
 <template>
-  <div>
-    {{ username }}
-    {{ time }}
+  <div class="wrap">
+    <p class="username">{{ username }}</p>
+    <div btn>{{ time }}</div>
   </div>
 </template>
+<style lang="scss" scoped>
+.wrap {
+  .username {
+    color: red;
+  }
+}
+</style>
