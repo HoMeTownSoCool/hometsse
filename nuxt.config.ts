@@ -4,18 +4,11 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@unocss/nuxt',
     '@pinia/nuxt',
-    '@nuxtjs/google-fonts',
     '@nuxt/content',
     '@nuxtjs/color-mode',
   ],
   colorMode: {
     classSuffix: '',
-  },
-  googleFonts: {
-    families: {
-      'Roboto': true,
-      'Open Sans': true,
-    },
   },
   typescript: {
     typeCheck: true,
