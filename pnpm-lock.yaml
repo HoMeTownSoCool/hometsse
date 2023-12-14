@@ -8,6 +8,9 @@ devDependencies:
   '@antfu/eslint-config':
     specifier: ^2.4.5
     version: 2.4.5(@unocss/eslint-plugin@0.58.0)(@vue/compiler-sfc@3.3.11)(eslint-plugin-format@0.1.0)(eslint@8.55.0)(typescript@5.3.3)
+  '@iconify/json':
+    specifier: ^2.2.157
+    version: 2.2.157
   '@nuxt/content':
     specifier: ^2.9.0
     version: 2.9.0(nuxt@3.8.2)(vue@3.3.11)
@@ -44,9 +47,6 @@ devDependencies:
   nuxt:
     specifier: ^3.8.2
     version: 3.8.2(eslint@8.55.0)(sass@1.69.5)(typescript@5.3.3)(vite@4.5.1)(vue-tsc@1.8.25)
-  nuxt-icon:
-    specifier: ^0.6.7
-    version: 0.6.7(nuxt@3.8.2)(vite@4.5.1)(vue@3.3.11)
   sass:
     specifier: ^1.69.5
     version: 1.69.5
@@ -1036,10 +1036,11 @@ packages:
     resolution: {integrity: sha512-dvuCeX5fC9dXgJn9t+X5atfmgQAzUOWqS1254Gh0m6i8wKd10ebXkfNKiRK+1GWi/yTvvLDHpoxLr0xxxeslWw==}
     dev: true
 
-  /@iconify/collections@1.0.369:
-    resolution: {integrity: sha512-FbmREMa7Nt0+iD3OKsztCEWdFnUI79Ch6g4dvgdlq8btNkdglNf+i08QXjXX4QFXpMbeRxpxwTtMPYgHXmEHLQ==}
+  /@iconify/json@2.2.157:
+    resolution: {integrity: sha512-mKBFQz5BqP5TGgugb0AmL7bYi7rO5jxoWQO0m7XM82ZpPRn8/BTiUW/tr2knOU2ODcmg9W/pQOAXEpkR48So9g==}
     dependencies:
       '@iconify/types': 2.0.0
+      pathe: 1.1.1
     dev: true
 
   /@iconify/types@2.0.0:
@@ -1057,15 +1058,6 @@ packages:
       local-pkg: 0.4.3
     transitivePeerDependencies:
       - supports-color
-    dev: true
-
-  /@iconify/vue@4.1.1(vue@3.3.11):
-    resolution: {integrity: sha512-RL85Bm/DAe8y6rT6pux7D2FJSiUEM/TPfyK7GrbAOfTSwrhvwJW+S5yijdGcmtXouA8MtuH9C7l4hiSE4mLMjg==}
-    peerDependencies:
-      vue: '>=3'
-    dependencies:
-      '@iconify/types': 2.0.0
-      vue: 3.3.11(typescript@5.3.3)
     dev: true
 
   /@ioredis/commands@1.2.0:
@@ -7388,21 +7380,6 @@ packages:
     hasBin: true
     optionalDependencies:
       fsevents: 2.3.3
-    dev: true
-
-  /nuxt-icon@0.6.7(nuxt@3.8.2)(vite@4.5.1)(vue@3.3.11):
-    resolution: {integrity: sha512-0QnQM0yqJCb8PWt+gAn6RiXy1/CHScFuOPbsfIIwHMvyKkea+blj5/unq7F9ZHMkfrHozyCID8ErFPSzwEYLeA==}
-    dependencies:
-      '@iconify/collections': 1.0.369
-      '@iconify/vue': 4.1.1(vue@3.3.11)
-      '@nuxt/devtools-kit': 1.0.5(nuxt@3.8.2)(vite@4.5.1)
-      '@nuxt/kit': 3.8.2
-    transitivePeerDependencies:
-      - nuxt
-      - rollup
-      - supports-color
-      - vite
-      - vue
     dev: true
 
   /nuxt@3.8.2(eslint@8.55.0)(sass@1.69.5)(typescript@5.3.3)(vite@4.5.1)(vue-tsc@1.8.25):

@@ -6,8 +6,11 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@nuxtjs/google-fonts',
     '@nuxt/content',
-    'nuxt-icon',
+    '@nuxtjs/color-mode',
   ],
+  colorMode: {
+    classSuffix: '',
+  },
   googleFonts: {
     families: {
       'Roboto': true,
