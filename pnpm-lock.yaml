@@ -26,6 +26,9 @@ devDependencies:
   '@unocss/eslint-plugin':
     specifier: ^0.58.0
     version: 0.58.0(eslint@8.55.0)(typescript@5.3.3)
+  '@unocss/extractor-mdc':
+    specifier: ^0.58.0
+    version: 0.58.0
   '@unocss/nuxt':
     specifier: ^0.58.0
     version: 0.58.0(postcss@8.4.32)(vite@4.5.1)(webpack@5.89.0)
@@ -2498,6 +2501,10 @@ packages:
     resolution: {integrity: sha512-s9wK2UugJM0WK1HpgPz2kTbpeyQc46zais+nauN/ykVX6NMq8PtGzSWszzf+0aIbtWAQGiqAfiYNTpf09tJHfg==}
     dependencies:
       '@unocss/core': 0.58.0
+    dev: true
+
+  /@unocss/extractor-mdc@0.58.0:
+    resolution: {integrity: sha512-7SYFvoEjf4w2/U5K1lH8EuFlUrFYxHOYhVOFAovjfAgmWyR//q62lSF70MVcToSTDFAi1zKGxoa3jQHsjV8seQ==}
     dev: true
 
   /@unocss/inspector@0.58.0:

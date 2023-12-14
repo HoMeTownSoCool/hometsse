@@ -8,6 +8,7 @@ import {
   transformerDirectives, // 用于支持内置的指令 @apply text-center my-0 font-medium;
   transformerVariantGroup, // 用于支持内置的变体组 <div class="hover:(bg-gray-400 font-medium) font-(light mono)"/>
 } from 'unocss'
+import extractorMdc from '@unocss/extractor-mdc'
 
 export default defineConfig({
   shortcuts: {
@@ -38,6 +39,9 @@ export default defineConfig({
         mono: 'DM Mono',
       },
     }),
+  ],
+  extractors: [ // 定义提取器
+    extractorMdc(),
   ],
   content: {
     filesystem: [
