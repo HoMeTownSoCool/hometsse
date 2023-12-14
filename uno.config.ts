@@ -10,10 +10,20 @@ import {
 } from 'unocss'
 
 export default defineConfig({
-  shortcuts: [ // 定义快捷方式
-    ['btn', 'px-4 py-1 rounded inline-block bg-teal-600 text-white cursor-pointer hover:bg-teal-700 disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50'],
-    ['icon-btn', 'inline-block cursor-pointer select-none opacity-75 transition duration-200 ease-in-out hover:opacity-100 hover:text-teal-600'],
-  ],
+  shortcuts: {
+    'border-base': 'border-gray-200 dark:border-gray-800',
+    'bg-active': 'bg-gray:10',
+    'bg-faded': 'bg-gray:5',
+    'bg-base': 'bg-white dark:bg-[#020420]',
+    'text-faded': 'text-gray6:100 dark:text-gray:100',
+  },
+  theme: { // 定义主题
+    colors: {
+      primary: {
+        DEFAULT: '#00DC82',
+      },
+    },
+  },
   presets: [ // 定义预设
     presetUno(),
     presetAttributify(),
@@ -29,6 +39,11 @@ export default defineConfig({
       },
     }),
   ],
+  content: {
+    filesystem: [
+      './content/**/*.md',
+    ],
+  },
   transformers: [ // 定义转换器
     transformerDirectives(),
     transformerVariantGroup(),

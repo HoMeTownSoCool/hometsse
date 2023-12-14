@@ -1,8 +1,9 @@
 <script setup lang="ts">
+const pageName = ref('index')
 </script>
 
 <template>
   <div>
-    index page
+    {{ pageName }}
   </div>
 </template>

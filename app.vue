@@ -1,7 +1,10 @@
+<script>
+import '@unocss/reset/tailwind.css'
+import './styles/base.scss'
+</script>
+
 <template>
   <NuxtLayout>
-    <AppHeader />
     <NuxtPage />
-    <AppFooter />
   </NuxtLayout>
 </template>
