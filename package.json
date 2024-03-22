@@ -1,0 +1,14 @@
+{
+  "name": "hometsse",
+  "version": "0.0.1",
+  "description": "Homesse h5 is a powerful Vue3 h5 template that allows you to quickly create a high-quality web project with built-in and rich plugins and configurations, including collaborative development configurations. Special thanks to Antfu",
+  "type": "module",
+  "private": true,
+  "packageManager": "pnpm@8.15.4",
+  "scripts": {},
+  "author": "hometown",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.4.3"
+  }
+}
